@@ -6,16 +6,11 @@ const int edgeMin(1);
 const int edgeMax(2);
 const int colwidth(6);
 
-void printHeadline() {
-    cout << setfill('=') 
-    << setw((colwidth * 2 + edgeMax + edgeMin) * 6 + edgeMax +1) << "\n";
-} 
+void printHeadline();
 
 int main()
 {
 	char letter;
-    
-
     
     // Print header
     printHeadline();    
@@ -53,3 +48,8 @@ int main()
   printHeadline();
   return 0;
 }
+
+void printHeadline() {
+    cout << setfill('=') 
+    << setw((colwidth * 2 + edgeMax + edgeMin) * 6 + edgeMax +1) << "\n";
+} 
